@@ -395,3 +395,10 @@ clipboard.on('error', function (e) {
     console.log(e);
     swal('复制失败', '', 'error');
 });
+
+function imgurl_upload() {
+    // imgurl
+    var imgurl = document.getElementById("imgurl");
+    console.log(imgurl.value);
+
+}
