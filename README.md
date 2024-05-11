@@ -35,7 +35,7 @@
 
 > [开启图片管理功能教程](./docs/manage.md)
 
-1. 点击[Use this template](https://github.com/x-dr/telegraph-Image/generate)按钮创建一个新的代码库。
+1. 点击[Use this template](https://github.com/aircross/telegraph-Image/generate)按钮创建一个新的代码库。
 
 2. 登录到[Cloudflare](https://dash.cloudflare.com/)控制台.
 3. 在帐户主页中，选择`pages`> ` Create a project` > `Connect to Git`
@@ -89,6 +89,8 @@ cachefly绑定cloudflare pages
 ### 感谢
 
 [@cf-pages](https://github.com/cf-pages/Telegraph-Image)
+
+[@cf-pages](https://github.com/x-dr/telegraph-Image)
 
 [@likebeta](https://github.com/likebeta/telegraph-image-hosting)
 
