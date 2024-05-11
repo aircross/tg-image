@@ -30,6 +30,14 @@ const handleRequest = async (request) => {
         }, {
             headers: { 'Content-Type': 'application/json' }
         });
+    } else if (url.pathname == "/imgurl_upload") {
+        // 等待确认处理方法是否可以继续使用getImgData
+        const imgData = await getImgData(request);
+        return Response.json({
+            "url": imgData,
+        }, {
+            headers: { 'Content-Type': 'application/json' }
+        });
     } else if (url.pathname == "/ip") {
         return Response.json({
             "ip": ip,
@@ -114,6 +122,8 @@ async function getImgData(request) {
     const responseData = await res_img.json();
     try {
         if (responseData.code === 200) {
+            console.log("weixinyanxuan API返回数据:");
+            console.log(responseData);
             const _URL = responseData.data;
             return _URL
         } else {
